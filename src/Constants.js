@@ -1,0 +1,47 @@
+module.exports = {
+	cdn: 'https://cdn.discordapp.com',
+	base: 'https://discordbots.org',
+	invite: 'https://discord.gg',
+
+	social: {
+		github: 'https://github.com',
+		reddit: 'https://www.reddit.com/user',
+		twitter: 'https://twitter.com',
+		youtube: 'https://www.youtube.com/channel',
+		instagram: 'https://www.instagram.com',
+	},
+
+	libraries: {
+		discordcr: 'https://github.com/meew0/discordcr',
+		dscord: 'https://github.com/b1naryth1ef/dscord',
+		'Discord.Net': 'https://github.com/RogueException/Discord.Net',
+		DSharpPlus: 'https://github.com/NaamloosDT/DSharpPlus',
+		Nostrum: 'https://github.com/Kraigie/nostrum',
+		DiscordGo: 'https://github.com/bwmarrin/discordgo',
+		'Discord.hs': 'https://github.com/jano017/Discord.hs',
+		Discord4j: 'https://github.com/austinv11/Discord4J',
+		Javacord: 'https://github.com/BtoBastian/Javacord',
+		JDA: 'https://github.com/DV8FromTheWorld/JDA',
+		'discord.io': 'https://github.com/izy521/discord.io',
+		'discord.js': 'https://github.com/hydrabolt/discord.js',
+		Discordie: 'https://github.com/qeled/discordie',
+		Eris: 'https://github.com/abalabahaha/eris',
+		Discordia: 'https://github.com/SinisterRectus/Discordia',
+		DiscordPHP: 'https://github.com/teamreflex/DiscordPHP',
+		RestCord: 'https://github.com/restcord/restcord',
+		'discord.py': 'https://github.com/Rapptz/discord.py',
+		discordrb: 'https://github.com/meew0/discordrb',
+		'discord-rs': 'https://github.com/SpaceManiac/discord-rs',
+		serenity: 'https://github.com/zeyla/serenity',
+		SwiftDiscord: 'https://github.com/nuclearace/SwiftDiscord',
+		Sword: 'https://github.com/Azoy/Sword',
+	},
+
+	defaultAvatars: [
+		'6debd47ed13483642cf09e832ed0bc1b',
+		'322c936a8c8be1b803cd94861bdfa868',
+		'dd4dbc0016779df1378e7812eabaa04d',
+		'0e291f67c9274a1abdddeb3fd919cbaa',
+		'1cbd08c76f8af6dddce02c5138971129',
+	],
+};
