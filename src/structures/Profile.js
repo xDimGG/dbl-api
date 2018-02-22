@@ -9,19 +9,19 @@ class Profile extends User {
 		super(data);
 
 		/**
-		 * This users' bio
+		 * This user's bio
 		 * @type {string?}
 		 */
 		this.bio = data.bio || null;
 
 		/**
-		 * This users' hex color
+		 * This user's hex color
 		 * @type {string?}
 		 */
 		this.color = data.color || null;
 
 		/**
-		 * A link to this users' banner
+		 * A link to this user's banner
 		 * @type {string?}
 		 */
 		this.banner = data.banner || null;
@@ -70,7 +70,7 @@ class Profile extends User {
 	}
 
 	/**
-	 * A link to this users' DBL profile
+	 * A link to this user's DBL profile
 	 * @type {string}
 	 * @readonly
 	 */

@@ -66,7 +66,7 @@ class Client extends EventEmitter {
 
 	/**
 	 * Fetch a bot's information.
-	 * @param {string} [id=this.id] The bots' id
+	 * @param {string} [id=this.id] The bot's id
 	 * @returns {Promise<Bot>} The bot
 	 */
 	fetchBot(id = this.id) {
@@ -121,7 +121,7 @@ class Client extends EventEmitter {
 
 	/**
 	 * Fetch stats.
-	 * @param {string} [id=this.id] The bots' ID
+	 * @param {string} [id=this.id] The bot's ID
 	 * @returns {Promise<Stats>} Stats
 	 */
 	fetchStats(id = this.id) {
@@ -134,7 +134,7 @@ class Client extends EventEmitter {
 
 	/**
 	 * @typedef {Object} StatsData
-	 * @prop {string} [id=this.id] The bots' ID
+	 * @prop {string} [id=this.id] The bot's ID
 	 * @prop {number|number[]} [serverCount] The amount of servers the bot's in. Act's like `shards` if it's an array
 	 * @prop {number[]} [shards] The amount of servers the bot's in per shard
 	 * @prop {string} [shardID] The index of the shard that's sending data

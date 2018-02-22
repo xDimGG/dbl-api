@@ -32,7 +32,7 @@ class Bot extends User {
 		this.upvotes = data.points;
 
 		/**
-		 * The bots' shards
+		 * The bot's shards
 		 * @type {number[]}
 		 */
 		this.shards = data.shards;
@@ -44,43 +44,43 @@ class Bot extends User {
 		this.library = data.lib;
 
 		/**
-		 * The bots' GitHub repository
+		 * The bot's GitHub repository
 		 * @type {string?}
 		 */
 		this.github = data.github || null;
 
 		/**
-		 * The bots' vanity URL
+		 * The bot's vanity URL
 		 * @type {string?}
 		 */
 		this.vanity = data.vanity || null;
 
 		/**
-		 * The bots' invite URL
+		 * The bot's invite URL
 		 * @type {string?}
 		 */
 		this.invite = data.invite;
 
 		/**
-		 * The bots' support server
+		 * The bot's support server
 		 * @type {string?}
 		 */
 		this.support = data.support || null;
 
 		/**
-		 * The bots' prefix
+		 * The bot's prefix
 		 * @type {string}
 		 */
 		this.prefix = data.prefix;
 
 		/**
-		 * The bots' tags
+		 * The bot's tags
 		 * @type {string[]}
 		 */
 		this.tags = data.tags;
 
 		/**
-		 * The bots' owners
+		 * The bot's owners
 		 * @type {string[]}
 		 */
 		this.owners = data.owners;
@@ -100,13 +100,13 @@ class Bot extends User {
 
 	/**
 	 * @typedef {Object} InviteInfo
-	 * @prop {string} scope This bots' scopes
-	 * @prop {string} client This bots' client ID
-	 * @prop {string} permissions This bots' permissions
+	 * @prop {string} scope This bot's scopes
+	 * @prop {string} client This bot's client ID
+	 * @prop {string} permissions This bot's permissions
 	 */
 
 	/**
-	 * Get info about this bots' invite URL. `null` if it isn't a discordapp.com link
+	 * Get info about this bot's invite URL. `null` if it isn't a discordapp.com link
 	 * @type {InviteInfo?}
 	 * @readonly
 	 */
