@@ -19,15 +19,15 @@ npm i dbl-api
 
 ### Getting an API Token
 
-Once signed into DBL, head over to https://discordbots.org/api/docs#mybots and get your api key for your bot.
+Once signed into DBL, head over to https://discordbots.org/api/docs#mybots and get your API key for your bot.
 
 ### Accepting WebHook Requests
 
-The main purpose for this library was to support the new WebHook feature that DBL has.
+The main purpose for this library is to support DBL's new webhook feature.
 
-To do this, you'd go edit your bot and in the "Webhook" section, you'd set the URL to something that points to your bots' server. This could even be the bots' IP.
+To activate the webhook, navigate to the edit section of your bot and set the webhook URL to something that points to your bot's server. This could even be the bot's IP.
 
-First, you obviously need to instantiate the API client with the `port` option. By default, the path is `/`, but you should make this some random string so that users' can't post random data if the find the bots' port. Obviously, you'd need to match the path with whatever is on your bot. Make sure that the port is port forwarded (it usually is on most hosts).
+First, you obviously need to instantiate the API client with the `port` option. By default, the path is `/`, but you should make this some random string so that users will not be able to post random data if they happen to find the bot's port. Obviously, you'd need to match the path with whatever is on your bot. Make sure that the port is port forwarded (it usually is on most hosts).
 
 ```js
 const DiscordBotListAPI = require('dbl-api');
