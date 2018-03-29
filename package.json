@@ -3,7 +3,7 @@
 	"name": "dbl-api",
 	"description": "A nice DBL API wrapper that supports its WebHook.",
 	"main": "index.js",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"license": "MIT",
 	"eslintConfig": {
 		"extends": "eslint-config-lloti"
@@ -15,7 +15,8 @@
 		"bots",
 		"list",
 		"wrapper",
-		"discord"
+		"discord",
+		"dblapi"
 	],
 	"bugs": {
 		"web": "https://github.com/lloti/dbl-api/issues"
