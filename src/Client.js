@@ -134,17 +134,17 @@ class Client extends EventEmitter {
 
 	/**
 	 * Check if a user has upvoted.
-	 * @param {string} userid The user's ID
+	 * @param {string} userId The user's ID
 	 * @param {string} [id=this.id] The bot's ID
 	 * @returns {Promise<boolean>} A boolean based on if the user has upvoted
 	 */
-	hasVoted(userid, id = this.id) {
-		if (!userid) return Promise.reject(new TypeError('No user ID Provided'));
+	hasVoted(userId, id = this.id) {
+		if (!userId) return Promise.reject(new TypeError('No user ID Provided'));
 		if (!id) return Promise.reject(new TypeError('No bot ID Provided'));
 
 		return this
 			.fetch(`/bots/${id}/check`, true)
-			.query({ userid })
+			.query({ userId })
 			.then(res => Boolean(res.body.voted));
 	}
 

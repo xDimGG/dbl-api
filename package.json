@@ -3,7 +3,7 @@
 	"name": "dbl-api",
 	"description": "A nice DBL API wrapper that supports its WebHook.",
 	"main": "index.js",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"license": "MIT",
 	"eslintConfig": {
 		"extends": "eslint-config-lloti"
