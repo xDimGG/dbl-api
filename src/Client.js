@@ -40,7 +40,7 @@ class Client extends EventEmitter {
 	/**
 	 * Fetch an endpoint.
 	 * @param {string} endpoint The endpoint to fetch
-	 * @param {boolean} [authorized=false] Whether or not to authorize this request
+	 * @param {boolean} [authorized=false] Whether to authorize this request
 	 * @param {string} [method=GET] The request method
 	 * @returns {Snekfetch} The request
 	 */
@@ -130,6 +130,22 @@ class Client extends EventEmitter {
 		return this
 			.fetch(`/bots/${id}/stats`)
 			.then(res => new Stats(res.body));
+	}
+
+	/**
+	 * Check if a user has upvoted.
+	 * @param {string} userid The user's ID
+	 * @param {string} [id=this.id] The bot's ID
+	 * @returns {Promise<boolean>} A boolean based on if the user has upvoted
+	 */
+	hasVoted(userid, id = this.id) {
+		if (!userid) return Promise.reject(new TypeError('No user ID Provided'));
+		if (!id) return Promise.reject(new TypeError('No bot ID Provided'));
+
+		return this
+			.fetch(`/bots/${id}/check`, true)
+			.query({ userid })
+			.then(res => Boolean(res.body.voted));
 	}
 
 	/**
